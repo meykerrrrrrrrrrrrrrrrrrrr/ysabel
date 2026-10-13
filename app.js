@@ -52,24 +52,26 @@
   const MascotPhrases = {
     bienvenida: [
       "¡Hola, Ysabel Carolina! 🐒 Soy tu compañero prevencionista en SIY1704. ¡Hoy vamos a dominar la seguridad industrial venezolana!",
-      "¡Qué alegría verte estudiar, Ysabel Carolina! Las normas SY-S04 y YR-S17 salvan vidas en el campo todos los días.",
-      "¡Lista para aprender, Ysabel Carolina! Recuerda que un buen prevencionista nunca improvisa."
+      "¡Qué alegría verte estudiar, Ysabel Carolina! Las normas SY-S04, YR-S17, INEA y SISEINOP salvan vidas en el campo todos los días.",
+      "¡Lista para aprender, Ysabel Carolina! Recuerda que un buen prevencionista nunca improvisa en tierra ni en agua."
     ],
     acierto: [
       "¡BRUTAL, Ysabel Carolina! 🌟 ¡Acertaste con precisión técnica! Esa es la actitud de una gran líder de seguridad.",
-      "¡Excelente respuesta, Ysabel Carolina! 🐒🎯 Dominas la norma venezolana a la perfección.",
-      "¡Así se hace, Ysabel Carolina! Tienes el ojo clínico de una auténtica inspectora SIAHO.",
+      "¡Excelente respuesta, Ysabel Carolina! 🐒🎯 Dominas las normas venezolanas, INEA y SISEINOP a la perfección.",
+      "¡Así se hace, Ysabel Carolina! Tienes el ojo clínico de una auténtica inspectora SIAHO y portuaria.",
       "¡Bravo Ysabel Carolina! Cada punto correcto es un accidente menos en el campo laboral. ¡Orgulloso de ti! 🎉"
     ],
     fallo: [
       "¡No te desanimes, Ysabel Carolina! 💪 De los errores nacen las mejores inspectoras. Lee la explicación para que la fijes en tu mente.",
-      "¡Ánimo Ysabel Carolina! 🐒 Esta pregunta tenía su trampa. Lo importante es que ahora ya sabes la razón técnica correcta.",
+      "¡Ánimo Ysabel Carolina! 🐒 Esta pregunta tenía su trampa técnica. Lo importante es que ahora ya sabes la razón correcta.",
       "¡Tranquila Ysabel Carolina! En seguridad industrial aprendemos analizando las causas. ¡La próxima la clavas seguro!",
       "¡Vamos con todo Ysabel Carolina! El conocimiento se construye paso a paso, ¡tú tienes la capacidad de dominarlo!"
     ],
     consejos: [
       "Consejo del Monito: Ysabel Carolina, nunca firmes un ART sin verificar que la cuadrilla tenga sus EPP completos.",
       "¿Sabías Ysabel Carolina? En la norma SY-S04, el vigía de fuego debe vigilar por lo menos 30 minutos tras terminar de soldar.",
+      "Tip del INEA: En gabarras y muelles petroleros, el chaleco salvavidas tipo I/II es obligatorio al transbordar o laborar cerca del agua.",
+      "Regla SISEINOP: La seguridad industrial SIAHO y la protección física PCP van de la mano para blindar cualquier instalación.",
       "Tip vital: Mezclar cloro con ácido muriático en casa genera gas cloro letal. ¡La seguridad empieza en el hogar, Ysabel!"
     ]
   };
@@ -232,7 +234,7 @@
           updateAudioStatus('Reproducción reanudada');
         } else {
           // Leer resumen general si no hay nada activo
-          const texto = `Hola Ysabel Carolina Nuñez. Te encuentras en la biblioteca SIY1704. Aquí puedes estudiar la norma SY-S04 sobre permisos de trabajo, la norma YR-S17 sobre análisis de riesgos en el trabajo, el marco LOPCYMAT y realizar exámenes con simulador anti-trampa.`;
+          const texto = `Hola Ysabel Carolina Nuñez. Te encuentras en la biblioteca SIY1704. Aquí puedes estudiar la norma SY-S04 sobre permisos de trabajo, la norma YR-S17 sobre análisis de riesgos en el trabajo, las regulaciones del INEA para seguridad acuática y portuaria, el sistema SISEINOP de protección integral, el marco LOPCYMAT y realizar exámenes interactivos con simulador anti-trampa.`;
           speakText(texto);
         }
       });
@@ -804,8 +806,8 @@
 
     let feedbackMsg = '';
     if (percentage >= 80) {
-      feedbackMsg = `¡Extraordinario desempeño, Ysabel Carolina! Tienes un dominio superior sobre las normas SY-S04, YR-S17 y el marco de seguridad industrial venezolano. Tu compromiso con la prevención es inspirador.`;
-      showMascotSpeech(`🏆 ¡FELICITACIONES YSABEL CAROLINA! ¡Eres una eminencia en seguridad industrial! Te has ganado tu diploma con honores.`);
+      feedbackMsg = `¡Extraordinario desempeño, Ysabel Carolina! Tienes un dominio superior sobre las normas SY-S04, YR-S17, regulaciones del INEA, doctrina SISEINOP y el marco legal venezolano. Tu compromiso con la prevención es inspirador.`;
+      showMascotSpeech(`🏆 ¡FELICITACIONES YSABEL CAROLINA! ¡Eres una eminencia en seguridad industrial, portuaria y de instalaciones! Te has ganado tu diploma con honores.`);
     } else if (percentage >= 60) {
       feedbackMsg = `¡Buen trabajo, Ysabel Carolina! Has aprobado el examen con fundamentos sólidos. Te recomendamos repasar los casos de espacios confinados y permisos en caliente para alcanzar la perfección.`;
       showMascotSpeech(`¡Aprobado con ganas, Ysabel Carolina! Repasa los detalles que fallamos y serás invencible.`);

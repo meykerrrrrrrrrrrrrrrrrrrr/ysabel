@@ -280,6 +280,166 @@ const SIY_DATA = {
           <li><strong>Riesgo Bajo / Aceptable (Verde):</strong> La tarea se ejecuta con precauciones habituales y procedimientos operativos estándar.</li>
         </ul>
       `
+    },
+    {
+      id: "modulo-inea",
+      codigo: "INEA - SEGURIDAD ACUÁTICA",
+      titulo: "Instituto Nacional de los Espacios Acuáticos (INEA) y Seguridad Portuaria y Lacustre",
+      subtitulo: "Normativa acuática venezolana para muelles, gabarras de perforación, remolcadores y operaciones lacustres/marítimas",
+      icono: "⚓",
+      colorTag: "azul",
+      resumen: "Regula las exigencias de la máxima autoridad acuática venezolana (INEA) y Capitanías de Puerto para trabajos en muelles, buques tanques, gabarras del Lago de Maracaibo y terminales de crudo, garantizando la salvaguarda de la vida humana en el agua.",
+      contenidoHtml: `
+        <div class="norma-badge badge-blue">Marco Legal: Ley Orgánica de los Espacios Acuáticos (LOEA) & Ley de Marinas y Actividades Conexas</div>
+        <h3>1. ¿Qué es el INEA y cuál es su Competencia en Seguridad Industrial?</h3>
+        <p>El <strong>Instituto Nacional de los Espacios Acuáticos (INEA)</strong> es el órgano rector de la administración acuática en la República Bolivariana de Venezuela, adscrito al Ministerio del Poder Popular para el Transporte. En las actividades industriales, petroleras y de construcción sobre cuerpos de agua (marítimos, fluviales o lacustres), el INEA ejerce la policía marítima y la fiscalización técnica a través de las <strong>Capitanías de Puerto</strong>.</p>
+        
+        <div class="callout callout-info">
+          <h4>📌 Punto Crítico para Ysabel Carolina:</h4>
+          <p>Toda labor que se ejecute a bordo de una gabarra, remolcador, lancha de personal o muelle petrolero (como en Jose, Guaraguao, Cardón, Amuay o en el Lago de Maracaibo) <strong>debe cumplir concurrentemente con las normas SY-S-04 / YR-S-17 de PDVSA y las regulaciones del INEA</strong>. La omisión de la anuencia de la Capitanía de Puerto acarrea la paralización de la nave o instalación.</p>
+        </div>
+
+        <h3>2. Requisitos de Salvamento y Seguridad de la Vida Humana en el Agua</h3>
+        <div class="grid-cards">
+          <div class="card-item border-blue">
+            <span class="card-tag tag-blue">🦺 Chalecos Salvavidas Certificados</span>
+            <h4>Dotación Personal Acuática Obligatoria</h4>
+            <ul>
+              <li><strong>Norma SOLAS / INEA:</strong> Todo trabajador en gabarra, muelle o lancha debe portar chaleco salvavidas tipo I o II de flotabilidad aprobada (mínimo 150 Newtons), con silbato marino y cinta reflectante de alta visibilidad.</li>
+              <li><strong>Uso Permanente:</strong> Es obligatorio al transbordar, transitar por pasarelas sin barandas rígidas o laborar a menos de 2 metros del borde del agua.</li>
+            </ul>
+          </div>
+
+          <div class="card-item border-orange">
+            <span class="card-tag tag-orange">⭕ Aros y Balsas Salvavidas</span>
+            <h4>Dispositivos Colectivos de Rescate</h4>
+            <ul>
+              <li><strong>Aros salvavidas:</strong> Distribuidos cada 15 a 20 metros a lo largo de muelles y gabarras, equipados con rabiza flotante de al menos 30 metros de longitud y luz automática autoencendible para horario nocturno.</li>
+              <li><strong>Balsas salvavidas inflables:</strong> Certificadas anualmente por estación autorizada por el INEA, con capacidad para el 100% de la dotación a bordo.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>3. Trabajos en Caliente y Frío en Áreas Acuáticas (INEA + SY-S-04)</h3>
+        <p>Cuando se efectúa corte y soldadura a bordo de una gabarra, buque tanque o en la plataforma de un muelle petrolero:</p>
+        <ul class="styled-list">
+          <li><strong>Doble Autorización:</strong> Se emite el <em>Permiso de Trabajo en Caliente bajo norma SY-S-04</em> y, además, se debe notificar formalmente y obtener el visto bueno de la <strong>Capitanía de Puerto del INEA</strong> de la jurisdicción.</li>
+          <li><strong>Inspección de Piques y Dobles Fondos:</strong> Prueba rigurosa de gas (0% LEL) en compartimentos estancos contiguos al área donde se aplicará calor.</li>
+          <li><strong>Embarcación de Salvamento en Guardia:</strong> Disponibilidad obligatoria de una lancha de rescate lista para actuar ante una caída de hombre al agua.</li>
+          <li><strong>Prevención de Contaminación (Convenio MARPOL / INEA):</strong> Prohibición absoluta de vertido de aceites, solventes, escoria de soldadura o aguas oleosas al agua. Se exige barrera de contención flotante desplegada alrededor de la nave durante faenas críticas.</li>
+        </ul>
+
+        <h3>4. Jurisdicciones Principales del INEA en el Sector Industrial</h3>
+        <table class="table-neon">
+          <thead>
+            <tr>
+              <th>Capitanía de Puerto INEA</th>
+              <th>Zona Operacional Estratégica</th>
+              <th>Actividad Industrial Clave</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Capitanía de Maracaibo</strong></td>
+              <td>Lago de Maracaibo (Zulia)</td>
+              <td>Gabarras de perforación, estaciones de flujo lacustres, tendido de tuberías sublacustres y lanchas de transporte de cuadrillas.</td>
+            </tr>
+            <tr>
+              <td><strong>Capitanía de Puerto La Cruz</strong></td>
+              <td>Complejo Criogénico de Jose y Bahía de Pozuelos (Anzoátegui)</td>
+              <td>Monoboyas y terminales de carga de buques petroleros de exportación y gaseros.</td>
+            </tr>
+            <tr>
+              <td><strong>Capitanía de Las Piedras</strong></td>
+              <td>Península de Paraguaná (Falcón)</td>
+              <td>Muelles del Centro de Refinación Paraguaná (Amuay y Cardón).</td>
+            </tr>
+            <tr>
+              <td><strong>Capitanía de Ciudad Guayana</strong></td>
+              <td>Eje Fluvial Río Orinoco (Bolívar / Monagas)</td>
+              <td>Transporte de mineral de hierro, bauxita y petróleo de la Faja Petrolífera del Orinoco hacia el Atlántico.</td>
+            </tr>
+          </tbody>
+        </table>
+      `
+    },
+    {
+      id: "modulo-siseinop",
+      codigo: "SISEINOP - PROTECCIÓN OPERACIONAL",
+      titulo: "Sistema Integral de Seguridad en Instalaciones Operacionales (SISEINOP)",
+      subtitulo: "Articulación sinérgica entre Seguridad Industrial (SIAHO), Control de Pérdidas (PCP) y Código PBIP",
+      icono: "🏢🛡️",
+      colorTag: "amarillo",
+      resumen: "Doctrina de protección integral que unifica la seguridad técnica industrial, la salvaguarda física patrimonial y la protección antiterrorista/portuaria en refinerías, plantas compresoras, muelles y campos de producción venezolanos.",
+      contenidoHtml: `
+        <div class="norma-badge badge-yellow">Marco Integral: PDVSA SIAHO + PCP + Código Internacional PBIP / ISPS</div>
+        <h3>1. ¿Qué es el SISEINOP y por qué es Vital?</h3>
+        <p>El <strong>SISEINOP (Sistema Integral de Seguridad en Instalaciones Operacionales)</strong> es la arquitectura corporativa de seguridad que fusiona la <strong>Seguridad Industrial, Ambiente e Higiene Ocupacional (SIAHO)</strong> con la <strong>Protección y Control de Pérdidas (PCP)</strong> y los protocolos de resguardo físico de infraestructuras críticas del Estado venezolano.</p>
+        
+        <div class="callout callout-warning">
+          <h4>💡 Fundamento Clave para Ysabel Carolina:</h4>
+          <p>Un accidente industrial puede ocurrir por una falla técnica (ámbito SIAHO - YR-S17 / SY-S04), pero también por una intrusión no autorizada, sabotaje o manipulación maliciosa de válvulas y tableros (ámbito PCP). <strong>El SISEINOP cierra esta brecha</strong> coordinando ambas disciplinas para garantizar una operación 100% blindada.</p>
+        </div>
+
+        <h3>2. Los Tres Pilares Estratégicos del SISEINOP</h3>
+        <div class="grid-cards">
+          <div class="card-item border-blue">
+            <span class="card-tag tag-blue">Pilar 1: SIAHO (Seguridad Ocupacional)</span>
+            <h4>Prevención de Riesgos de Proceso</h4>
+            <ul>
+              <li>Cumplimiento irrestricto de las normas <strong>SY-S-04</strong> (Permisos de Trabajo) y <strong>YR-S-17</strong> (ART).</li>
+              <li>Monitoreo de atmósferas peligrosas, control de derrames y prevención de incendios industriales.</li>
+              <li>Capacitación continua de los trabajadores y dotación de EPP certificado.</li>
+            </ul>
+          </div>
+
+          <div class="card-item border-orange">
+            <span class="card-tag tag-orange">Pilar 2: PCP (Resguardo Patrimonial)</span>
+            <h4>Protección Física de Instalaciones</h4>
+            <ul>
+              <li>Control biométrico y de credenciales en garitas de acceso vehicular y peatonal.</li>
+              <li>Inspección rigurosa de herramientas, cilindros de gas y maquinarias que ingresan a plantas.</li>
+              <li>Patrullaje perimetral, circuito cerrado de televisión (CCTV) y detección de intrusiones.</li>
+            </ul>
+          </div>
+
+          <div class="card-item border-fuchsia">
+            <span class="card-tag tag-fuchsia">Pilar 3: PBIP (Seguridad Portuaria)</span>
+            <h4>Protección de Buques e Instalaciones</h4>
+            <ul>
+              <li>Aplicación del Código PBIP (ISPS) en terminales de carga de hidrocarburos.</li>
+              <li>Declaración de Niveles de Protección (Nivel 1: Normal, Nivel 2: Reforzado, Nivel 3: Alerta Máxima).</li>
+              <li>Zonas de acceso restringido en muelles y fondeaderos de tanqueros.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>3. Protocolo Operacional Conjunto en Campo</h3>
+        <p>Bajo la directriz del SISEINOP, para que un contratista inicie una labor en un área operacional:</p>
+        <div class="steps-container">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Verificación de Acceso en Garita (PCP)</h4>
+              <p>Inspección de listas de personal autorizado, pruebas de alcoholemia aleatorias e inspección física del vehículo y herramientas.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Validación del ART y Permiso de Trabajo (SIAHO)</h4>
+              <p>El custodio emite el permiso SY-S-04 previa revisión en caliente/frío y verifica que el ART (YR-S-17) esté firmado por toda la cuadrilla.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Coordinación de Emergencias y Respuesta Inmediata</h4>
+              <p>Establecimiento del canal de radiocomunicación único con la Sala de Control, Brigada de Respuesta y el Comité de Ayuda Mutua (CAM).</p>
+            </div>
+          </div>
+        </div>
+      `
     }
   ],
 
@@ -402,6 +562,36 @@ const SIY_DATA = {
         ]
       },
       moraleja: "El protocolo LOTO en la industria equivale a bajar el breaker y pegar una cinta adhesiva que diga 'NO SUBIR, REPARANDO' en casa."
+    },
+    {
+      id: "caso-5",
+      titulo: "Seguridad Acuática: Gabarra en Lago/Mar (INEA) vs. Paseo en Bote",
+      categoria: "Riesgo de Caída al Agua y Ahogamiento",
+      icono: "⚓",
+      laboral: {
+        escenario: "Mantenimiento de tuberías en una gabarra petrolera en el Lago de Maracaibo o Terminal de Jose (Normas SY-S-04, YR-S-17 e INEA).",
+        peligro: "Superficies mojadas/oleaje, proximidad a bordes sin baranda sobre agua profunda (>10m), hélices de remolcadores y choque de embarcaciones.",
+        riesgo: "Caída de hombre al agua, traumatismo craneal con el casco de la nave, hipotermia y ahogamiento inmediato.",
+        controlesNormativos: [
+          "Uso permanente de chaleco salvavidas tipo I/II certificado por INEA/SOLAS con silbato y cinta reflectante.",
+          "Aros salvavidas con rabiza flotante de 30 metros cada 15 metros de borda.",
+          "Línea de vida retráctil para faenas a menos de 2 metros del agua.",
+          "Lancha de salvamento tripulada en guardia permanente en el agua.",
+          "Zafarrancho y simulacro de hombre al agua verificado periódicamente por la Capitanía de Puerto."
+        ]
+      },
+      cotidiano: {
+        escenario: "Pasear en familia o pescar en una lancha deportiva, peñero o bote sin ponerse el chaleco salvavidas porque 'hace mucho calor' o 'todos saben nadar'.",
+        peligro: "Golpe imprevisto por ola o estela de otra embarcación, aceleración brusca y pérdida súbita de equilibrio.",
+        riesgo: "Caída al agua inconsciente tras golpearse contra el motor o la borda, hundiéndose sin posibilidad de flotar.",
+        solucionCorrecta: [
+          "Colocarse y abrocharse el chaleco salvavidas antes de subir a la embarcación y mantenerlo puesto todo el trayecto.",
+          "Respetar la capacidad máxima de personas indicada por la autoridad acuática.",
+          "Llevar un aro o boya salvavidas visible en la cubierta.",
+          "Prohibir el consumo de alcohol al capitán o patrón del bote."
+        ]
+      },
+      moraleja: "Saber nadar no te salva si caes al agua desmayado tras un golpe. ¡El chaleco salvavidas mantiene tu cabeza a flote automáticamente!"
     }
   ],
 
@@ -409,6 +599,14 @@ const SIY_DATA = {
     {
       pregunta: "¿Cuál es la diferencia exacta entre la norma SY-S-04 y la YR-S-17?",
       respuesta: "La norma **SY-S-04** (o SI-S-04) es el estándar rector para la **autorización y gestión de Permisos de Trabajo** (en frío, caliente y certificados de apoyo). Establece los requisitos legales y operacionales que deben cumplir las instalaciones y contratistas para permitir que una obra inicie. Por su parte, la **YR-S-17** (o IR-S-17) es la metodología técnica para elaborar el **Análisis de Riesgos en el Trabajo (ART)**, es decir, el desglose paso a paso de la actividad para identificar peligros y fijar controles específicos. En la práctica venezolana, el ART (YR-S-17) es el anexo técnico obligatorio para poder emitir el Permiso de Trabajo (SY-S-04)."
+    },
+    {
+      pregunta: "¿Qué rol cumple el INEA en la seguridad industrial y cuándo es obligatoria su anuencia?",
+      respuesta: "El **Instituto Nacional de los Espacios Acuáticos (INEA)** es la máxima autoridad del sector acuático en Venezuela (adscrito al MPPT). Ejerce la policía marítima, fluvial y lacustre mediante las **Capitanías de Puerto**. En seguridad industrial, su intervención es obligatoria para: \n1. **Trabajos en muelles petroleros, buques y gabarras:** Toda labor en caliente (soldadura, corte) en instalaciones acuáticas requiere la autorización de la Capitanía de Puerto además del permiso SY-S-04.\n2. **Inspecciones de navegabilidad:** Certificar la integridad de gabarras de perforación, remolcadores y lanchas de transporte de cuadrillas.\n3. **Dotación de salvamento:** Fiscalizar la vigencia de chalecos certificados SOLAS/INEA, balsas salvavidas y aros.\n4. **Prevención de derrames:** Exigir barreras de contención y planes de contingencia según el Convenio MARPOL."
+    },
+    {
+      pregunta: "¿Qué es el SISEINOP y cómo interactúa con el ART (YR-S-17) y los permisos SY-S-04?",
+      respuesta: "El **SISEINOP (Sistema Integral de Seguridad en Instalaciones Operacionales)** es el modelo integral corporativo que articula la **Seguridad Industrial y Ambiente (SIAHO)** con la **Protección y Control de Pérdidas (PCP)** y la **Protección Portuaria (Código PBIP/ISPS)** en infraestructuras críticas. \n\nMientras que el **ART (YR-S-17)** y el **Permiso SY-S-04** gestionan los peligros operacionales de la tarea física (energías, gases, caídas), el **SISEINOP** asegura el resguardo perimetral, la verificación de cuadrillas en garitas, el control de herramientas e insumos, y la coordinación unificada entre brigadas de bomberos industriales y la seguridad física ante cualquier contingencia mayor."
     },
     {
       pregunta: "¿Quién tiene la autoridad de suspender un trabajo si detecta peligro inminente?",
@@ -435,12 +633,16 @@ const SIY_DATA = {
   glosario: [
     { termino: "ART (Análisis de Riesgos en el Trabajo)", definicion: "Metodología sistemática normada por IR-S-17 para fragmentar una tarea en pasos ordenados, identificar peligros y fijar barreras de control antes de ejecutar." },
     { termino: "Acto Inseguro (Acto Subestándar)", definicion: "Toda acción humana que desobedece un procedimiento, norma o buena práctica de seguridad, incrementando la probabilidad de un accidente." },
+    { termino: "Capitanía de Puerto (INEA)", definicion: "Unidad operativa y fiscalizadora del INEA encargada de autorizar el tráfico acuático, despachos de zarpe e inspecciones de seguridad en muelles y embarcaciones." },
+    { termino: "Código PBIP / ISPS", definicion: "Código Internacional para la Protección de los Buques y de las Instalaciones Portuarias. Eje portuario del SISEINOP para salvaguardar muelles y tanqueros frente a amenazas." },
     { termino: "Condición Insegura (Condición Subestándar)", definicion: "Cualquier estado físico, mecánico o ambiental del entorno laboral que no cumple con los estándares mínimos de seguridad y representa peligro." },
+    { termino: "INEA", definicion: "Instituto Nacional de los Espacios Acuáticos. Máxima autoridad acuática de Venezuela, rectora de la seguridad marítima, fluvial, lacustre y portuaria." },
     { termino: "INPSASEL", definicion: "Instituto Nacional de Prevención, Salud y Seguridad Laborales de Venezuela. Órgano fiscalizador y rector en materia de salud ocupacional." },
     { termino: "LOPCYMAT", definicion: "Ley Orgánica de Prevención, Condiciones y Medio Ambiente de Trabajo. Ley madre venezolana para la protección integral de la clase trabajadora." },
     { termino: "LOTO (Lock Out / Tag Out)", definicion: "Bloqueo mecánico y etiquetado visible de interruptores, válvulas y fuentes de energía para impedir su reactivación accidental durante mantenimientos." },
     { termino: "Permiso en Caliente", definicion: "Autorización escrita bajo norma SY-S-04 para trabajos que producen llamas abiertas, chispas o calor capaz de inflamar atmósferas combustibles." },
     { termino: "Permiso en Frío", definicion: "Autorización escrita bajo norma SY-S-04 para actividades mecánicas, civiles o instrumentales que no generan fuentes térmicas de ignición." },
+    { termino: "SISEINOP", definicion: "Sistema Integral de Seguridad en Instalaciones Operacionales. Doctrina de seguridad que unifica la Seguridad Industrial (SIAHO), Control de Pérdidas (PCP) y Protección Portuaria (PBIP)." },
     { termino: "Vigía de Fuego", definicion: "Persona entrenada y designada para observar de forma continua los trabajos en caliente, equipada con extintor y atenta a cualquier chispa o conato." }
   ],
 
@@ -825,6 +1027,120 @@ const SIY_DATA = {
         3: "La prevención busca evitar la fatalidad, no esperar a que alguien muera para actualizar un plan."
       },
       explicacionCorrecta: "¡Perfecto Ysabel Carolina! La Norma Técnica NT-01-2008 exige que el PSST sea evaluado y actualizado **al menos una vez al año** con la participación activa del Comité de Seguridad y Salud Laboral y los trabajadores."
+    },
+    {
+      id: 21,
+      modulo: "modulo-inea",
+      tema: "Autoridad Acuática INEA y Capitanías de Puerto",
+      pregunta: "Cuando se va a realizar un trabajo en caliente (soldadura u oxicorte) a bordo de una gabarra petrolera o en un muelle en aguas venezolanas, ¿qué autorización adicional se requiere además del permiso SY-S-04?",
+      opciones: [
+        "Autorización de la Alcaldía local para expendio de alimentos.",
+        "Anuencia o permiso expreso de la Capitanía de Puerto respectiva del INEA.",
+        "Permiso del Instituto de Tránsito Terrestre (INTT).",
+        "Ninguna, con solo la firma del soldador es suficiente."
+      ],
+      correcta: 1,
+      retroalimentacionIncorrecta: {
+        0: "La alcaldía maneja tributos municipales civiles, no la seguridad ni el tráfico marítimo/lacustre.",
+        2: "El INTT regula la circulación de vehículos terrestres en carreteras, no los espacios acuáticos.",
+        3: "La firma del soldador jamás constituye una autorización legal en áreas bajo jurisdicción acuática."
+      },
+      explicacionCorrecta: "¡Brillante Ysabel Carolina! Según la Ley Orgánica de los Espacios Acuáticos (LOEA) y la normativa venezolana, toda actividad de riesgo en gabarras, buques y muelles requiere la **autorización de la Capitanía de Puerto del INEA**, la cual actúa conjuntamente con el custodio de PDVSA (norma SY-S-04)."
+    },
+    {
+      id: 22,
+      modulo: "modulo-inea",
+      tema: "Dispositivos de Salvamento en Faenas Acuáticas",
+      pregunta: "En una gabarra de perforación o estación de flujo en el Lago de Maracaibo, ¿cuál es el requisito obligatorio de chaleco salvavidas para el personal según regulaciones INEA/SOLAS?",
+      opciones: [
+        "Usar chaleco salvavidas únicamente de noche o si se desata una tormenta eléctrica.",
+        "Portar obligatoriamente chaleco salvavidas certificado Tipo I o II con silbato y cinta reflectante al transitar o laborar cerca de bordas.",
+        "Basta con tener salvavidas inflables de juguete guardados en el comedor.",
+        "El uso de chaleco está prohibido porque incomoda el movimiento de la cuadrilla."
+      ],
+      correcta: 1,
+      retroalimentacionIncorrecta: {
+        0: "Las caídas de hombre al agua ocurren de día y con calma chicha; la exigencia es de uso continuo e incondicional.",
+        2: "Los flotadores recreativos no cumplen con la flotabilidad mínima reglamentaria (150 Newtons) ni resisten hidrocarburos.",
+        3: "La comodidad jamás se antepone a la vida; el chaleco es el EPP salvavidas primario ante el riesgo de ahogamiento."
+      },
+      explicacionCorrecta: "¡Excelente conocimiento técnico Ysabel Carolina! Las normas del INEA y los estándares internacionales SOLAS exigen **chalecos salvavidas certificados Tipo I o II con silbato náutico y bandas reflectantes**, siendo obligatorio su porte permanente cerca del agua o durante transbordos."
+    },
+    {
+      id: 23,
+      modulo: "modulo-siseinop",
+      tema: "Fundamentos y Alcance de SISEINOP",
+      pregunta: "¿Cuál es el objetivo principal del Sistema Integral de Seguridad en Instalaciones Operacionales (SISEINOP)?",
+      opciones: [
+        "Reemplazar por completo el pago de nómina de los trabajadores petroleros.",
+        "Articular e integrar la Seguridad Industrial (SIAHO) con la Protección Física Patrimonial (PCP) y la Seguridad Portuaria para blindar la instalación ante riesgos técnicos y amenazas externas.",
+        "Comprar uniformes deportivos para los campeonatos de fin de semana.",
+        "Eliminar la necesidad de hacer inspecciones previas y permisos de trabajo."
+      ],
+      correcta: 1,
+      retroalimentacionIncorrecta: {
+        0: "El SISEINOP no es un sistema de finanzas ni nómina, es una doctrina de seguridad integral.",
+        2: "Las actividades deportivas pertenecen a bienestar social, no a la doctrina de salvaguarda operacional.",
+        3: "Al contrario, el SISEINOP refuerza y hace más estrictas las inspecciones técnicas y de seguridad física."
+      },
+      explicacionCorrecta: "¡Extraordinario Ysabel Carolina! El **SISEINOP** crea una sinergia total entre **SIAHO** (prevención de accidentes con SY-S04 y YR-S17) y **PCP** (control de accesos, resguardo físico perimetral y mitigación de intrusiones/sabotajes) para proteger la vida y las operaciones estratégicas del país."
+    },
+    {
+      id: 24,
+      modulo: "modulo-siseinop",
+      tema: "Código PBIP y Seguridad Portuaria",
+      pregunta: "Dentro del esquema SISEINOP aplicado a terminales de embarque petrolero (como Jose o Cardón), ¿qué establece el Código Internacional PBIP (ISPS)?",
+      opciones: [
+        "Recetas de cocina para el personal de guardia en los comedores de planta.",
+        "Niveles y medidas de protección para buques e instalaciones portuarias frente a amenazas a la seguridad física y operacional.",
+        "Un catálogo de precios de venta internacional del barril de crudo.",
+        "Instrucciones para pintar las lanchas de color verde fluorescente."
+      ],
+      correcta: 1,
+      retroalimentacionIncorrecta: {
+        0: "El PBIP no tiene relación con servicios de alimentación; es un estándar de seguridad de infraestructuras críticas.",
+        2: "El precio del crudo es materia comercial y de la OPEP, no del Código de Protección Portuaria.",
+        3: "El color de las embarcaciones se rige por especificaciones técnicas del armador y normas de señalización del INEA."
+      },
+      explicacionCorrecta: "¡Muy bien Ysabel Carolina! El **Código PBIP (ISPS)** establece los 3 niveles de protección portuaria internacional (Nivel 1 Normal, Nivel 2 Reforzado, Nivel 3 Excepcional) y regula el control de acceso estricto a las zonas de atraque de tanqueros y muelles."
+    },
+    {
+      id: 25,
+      modulo: "modulo-inea",
+      tema: "Transbordo de Personal y ART en Agua",
+      pregunta: "Al elaborar un ART (YR-S-17) para el paso de una cuadrilla desde un muelle hacia una lancha de transporte de personal bajo supervisión de INEA, ¿cuál es el peligro crítico inmediato?",
+      opciones: [
+        "El brillo de la luna que ciega al operador de la lancha.",
+        "Efecto vaivén/oleaje entre muelle y lancha con riesgo de caída al agua, resbalón o aplastamiento de extremidades entre cascos.",
+        "Que los peces en el agua se asusten con el ruido del motor.",
+        "Que los teléfonos móviles pierdan señal durante el trayecto."
+      ],
+      correcta: 1,
+      retroalimentacionIncorrecta: {
+        0: "La luna no representa un peligro de aplastamiento; el riesgo crítico es el movimiento oscilatorio relativo de las embarcaciones.",
+        2: "La fauna acuática no es el peligro inmediato para la vida del trabajador durante el paso de embarque.",
+        3: "La cobertura celular no afecta la integridad física directa durante el paso de abordaje."
+      },
+      explicacionCorrecta: "¡Impecable análisis Ysabel Carolina! En operaciones acuáticas fiscalizadas por el INEA, el transbordo es una maniobra de alto riesgo donde el **oleaje genera movimiento relativo que puede aprisionar o aplastar a un trabajador o provocar su caída al agua**, exigiendo el uso de chaleco, sincronización 'a compás de ola' y asistencia del patrón de lancha."
+    },
+    {
+      id: 26,
+      modulo: "modulo-siseinop",
+      tema: "Control en Garita y Verificación Previa",
+      pregunta: "Bajo los procedimientos del SISEINOP, ¿cuál es el requisito previo que debe cumplirse en la garita de control antes de que una cuadrilla con cilindros de gas ingrese a una planta operacional?",
+      opciones: [
+        "Solo saludar al vigilante de turno y entrar a máxima velocidad.",
+        "Inspección física de los cilindros (tapa protectora, válvulas, carretilla vertical), verificación de credenciales y constatación de la orden de trabajo.",
+        "Regalarle un refresco al personal de seguridad física para evitar la requisa.",
+        "Dejar los cilindros rodando sueltos en la batea de la camioneta sin amarrar."
+      ],
+      correcta: 1,
+      retroalimentacionIncorrecta: {
+        0: "Entrar sin control viola el resguardo perimetral de la planta y genera peligro de ingreso de elementos no autorizados.",
+        2: "El cohecho o evasión de controles es una falta gravísima sancionada administrativa y penalmente en la industria.",
+        3: "Transportar cilindros sueltos rodando es un acto inseguro crítico que puede provocar la explosión del cilindro si se fractura la válvula."
+      },
+      explicacionCorrecta: "¡Así se responde Ysabel Carolina! El **SISEINOP** articula a la seguridad patrimonial (PCP) con SIAHO para constatar que todo equipo presurizado cuente con **capuchón protector, transporte vertical encadenado, inspección de fugas y verificación del personal** antes de cruzar la garita hacia el área operativa."
     }
   ]
 };

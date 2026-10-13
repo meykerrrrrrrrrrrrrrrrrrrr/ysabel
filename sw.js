@@ -1,5 +1,5 @@
 // Service Worker para SIY1704 - Soporte Offline e Instalación PWA
-const CACHE_NAME = 'siy1704-cache-v2';
+const CACHE_NAME = 'siy1704-cache-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
