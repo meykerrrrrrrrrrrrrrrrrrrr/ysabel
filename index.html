@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>SIY1704 - Biblioteca y Examen de Seguridad Industrial | Ysabel Carolina Nuñez</title>
+  
+  <!-- PWA & Meta Tags -->
+  <meta name="description" content="Plataforma de estudio de Seguridad Industrial Venezolana (SY-S04, YR-S17, LOPCYMAT, ART). Diseñado para Ysabel Carolina Nuñez.">
+  <meta name="theme-color" content="#1d58db">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SIY1704">
+  
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon.svg">
+
+  <!-- Estilos Neón Principales -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CABECERA DEL SITIO
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Marca y Logo -->
+      <a href="#inicio" class="brand-wrapper">
+        <img src="icon.svg" alt="Logo SIY1704 Monito" class="brand-logo-img">
+        <div class="brand-info">
+          <h1>SIY1704</h1>
+          <span class="brand-subtitle">Seguridad Industrial • Venezuela</span>
+        </div>
+      </a>
+
+      <!-- Insignia de Usuario Personalizado -->
+      <div class="user-profile-badge">
+        <div class="user-avatar-mini">YN</div>
+        <div>
+          <span class="user-name-text">Ysabel Carolina Nuñez</span>
+          <span class="user-role-text">Inspectora en Formación</span>
+        </div>
+      </div>
+
+      <!-- Acciones de Cabecera -->
+      <div class="header-actions">
+        <button id="btnInstallApp" class="btn-header btn-install" title="Descargar en pantalla de inicio">
+          📲 <span>Instalar App</span>
+        </button>
+        <a href="#audiolibro-seccion" class="btn-header" title="Ir a controles de audio">
+          🎧 <span>Audiolibro</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-link active">🏠 Inicio</a>
+      <a href="#biblioteca" class="nav-link">📚 Biblioteca SY-S04 / YR-S17</a>
+      <a href="#audiolibro-seccion" class="nav-link">🎧 Audiolibro</a>
+      <a href="#seccion-examen" class="nav-link">📝 Simulador de Examen</a>
+      <a href="#casos-practicos" class="nav-link">⚖️ Vida Laboral vs Cotidiana</a>
+      <a href="#preguntas-frecuentes" class="nav-link">❓ Preguntas Frecuentes</a>
+      <a href="#glosario" class="nav-link">📖 Glosario</a>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       BANNER HERO DE BIENVENIDA PERSONALIZADO
+       ========================================================================== -->
+  <section id="inicio" class="hero-banner">
+    <div class="hero-card">
+      <div class="hero-welcome-tag">
+        ⭐ Plataforma de Estudio Exclusiva
+      </div>
+      <h2 class="hero-title">
+        ¡Bienvenida, <span class="highlight-name inject-student-name">Ysabel Carolina Nuñez</span>!
+      </h2>
+      <p class="hero-desc">
+        Tu academia interactiva para dominar los estándares de <strong>Seguridad Industrial Venezolana</strong>: la norma técnica de permisos de trabajo <strong>SY-S-04 / SI-S-04</strong>, la metodología de análisis de riesgos en el trabajo <strong>YR-S-17 / IR-S-17</strong>, la <strong>LOPCYMAT</strong> y las normas <strong>COVENIN</strong>.
+      </p>
+      
+      <div class="hero-badges-row">
+        <div class="hero-badge-pill pill-blue">
+          🛡️ <strong>SY-S-04:</strong> Permisos Frío/Caliente y Certificados
+        </div>
+        <div class="hero-badge-pill pill-yellow">
+          📋 <strong>YR-S-17:</strong> Metodología ART y Controles
+        </div>
+        <div class="hero-badge-pill pill-orange">
+          ⚖️ <strong>LOPCYMAT:</strong> Derechos, Deberes e INPSASEL
+        </div>
+        <div class="hero-badge-pill pill-fuchsia">
+          🐒 <strong>Tutor Virtual:</strong> Monito Prevencionista Interactivo
+        </div>
+      </div>
+
+      <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <a href="#seccion-examen" class="btn-start-exam" style="font-size: 0.95rem; padding: 0.75rem 1.4rem;">
+          🚀 Ir al Examen con Anti-Trampa
+        </a>
+        <button id="btnInstallAppHero" class="btn-header btn-install" style="font-size: 0.95rem; padding: 0.75rem 1.4rem;">
+          📲 Instalar en mi Pantalla de Inicio
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTENIDO PRINCIPAL
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         BARRA CENTRAL DE AUDIOLIBRO / CONTROL DE VOZ
+         ========================================================================== -->
+    <section id="audiolibro-seccion" class="audio-controller-bar">
+      <div class="audio-header-row">
+        <div class="audio-title-group">
+          <span class="audio-icon-pulse">🎧</span>
+          <div>
+            <h3 style="font-size: 1.15rem; color: var(--beige);">Audiolibro y Lector por Voz</h3>
+            <span style="font-size: 0.8rem; color: var(--neon-mustard-bright);">Escucha la biblioteca y temas con la voz que prefieras</span>
+          </div>
+        </div>
+
+        <div class="audio-controls-group">
+          <button id="btnAudioPlay" class="btn-audio btn-audio-primary" title="Reproducir audio">
+            ▶️ Reproducir
+          </button>
+          <button id="btnAudioPause" class="btn-audio" title="Pausar audio">
+            ⏸️ Pausar
+          </button>
+          <button id="btnAudioStop" class="btn-audio btn-audio-danger" title="Detener audio">
+            ⏹️ Detener
+          </button>
+        </div>
+      </div>
+
+      <div class="voice-selectors-grid">
+        <div class="voice-select-item">
+          <label for="voiceSelect">Tipo de Voz del Lector:</label>
+          <select id="voiceSelect" class="select-custom">
+            <option value="">Cargando voces del dispositivo...</option>
+          </select>
+        </div>
+
+        <div class="voice-select-item">
+          <label for="rateSlider">Velocidad de Lectura: <span id="rateValueLabel" style="color:var(--neon-blue-bright);">1.0x</span></label>
+          <input type="range" id="rateSlider" class="slider-custom" min="0.7" max="1.6" step="0.1" value="1.0">
+        </div>
+      </div>
+
+      <div class="now-reading-bar">
+        <span>📢 <strong>Estado:</strong> <span id="audioStatusText">Listo para leer</span></span>
+        <span style="font-size: 0.78rem; color: var(--neon-mustard);">Consejo: Usa el botón 🔊 en cualquier tema para escucharlo</span>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 1: BIBLIOTECA DE SEGURIDAD INDUSTRIAL
+         ========================================================================== -->
+    <section id="biblioteca" class="section-wrapper">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title title-blue">📚 Biblioteca Completa de Estudio</h2>
+          <p class="section-subtitle">Temas y subtemas desglosados conforme a las normas técnicas venezolanas</p>
+        </div>
+      </div>
+
+      <div id="libraryModulesGrid" class="library-grid">
+        <!-- Renderizado dinámicamente por JavaScript -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 2: SIMULADOR DE EXAMEN CON SISTEMA ANTI-TRAMPA
+         ========================================================================== -->
+    <section id="seccion-examen" class="section-wrapper">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title title-yellow">📝 Simulador de Examen SIY1704</h2>
+          <p class="section-subtitle">Evaluación interactiva, retroalimentación formativa y sistema estricto Anti-Trampa</p>
+        </div>
+      </div>
+
+      <div class="exam-section-container">
+        
+        <!-- PANEL 1: CONFIGURACIÓN PREVIA AL EXAMEN -->
+        <div id="examSetupBox" class="exam-setup-box">
+          <div class="exam-setup-grid">
+            <!-- Selección de Temas -->
+            <div class="setup-card">
+              <h4>🎯 Selecciona los Temas a Evaluar</h4>
+              <div class="checkbox-group">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="examTopic" value="modulo-sy-s04" checked>
+                  <span>Norma SY-S-04 / SI-S-04 (Permisos de Trabajo)</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="examTopic" value="modulo-yr-s17" checked>
+                  <span>Norma YR-S-17 / IR-S-17 (Metodología ART)</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="examTopic" value="modulo-marco-legal" checked>
+                  <span>Marco Legal (LOPCYMAT, NT-01-2008, COVENIN)</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="examTopic" value="modulo-matriz-riesgo" checked>
+                  <span>Peligro vs Riesgo y Matriz de Severidad</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Cantidad de Preguntas y Tiempo -->
+            <div class="setup-card">
+              <h4>⚙️ Parámetros de la Prueba</h4>
+              <div class="voice-select-item" style="margin-bottom: 1rem;">
+                <label for="examQuestionCount">Cantidad de Preguntas:</label>
+                <select id="examQuestionCount" class="select-custom">
+                  <option value="5">5 Preguntas (Rápido)</option>
+                  <option value="10" selected>10 Preguntas (Estándar)</option>
+                  <option value="15">15 Preguntas (Avanzado)</option>
+                  <option value="20">20 Preguntas (Examen Completo Oficial)</option>
+                </select>
+              </div>
+
+              <div class="voice-select-item">
+                <label for="examTimeLimit">Límite de Tiempo:</label>
+                <select id="examTimeLimit" class="select-custom">
+                  <option value="5">5 Minutos (Desafío Veloz)</option>
+                  <option value="10" selected>10 Minutos (1 min por pregunta)</option>
+                  <option value="15">15 Minutos (Calmado)</option>
+                  <option value="25">25 Minutos (Extendido)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Compromiso Anti-Trampa -->
+          <div class="anti-cheat-pledge-box">
+            <span class="anti-cheat-icon">🛡️</span>
+            <div class="anti-cheat-text">
+              <h4>Protocolo de Seguridad Anti-Trampa Activado para Ysabel Carolina</h4>
+              <p>
+                Al iniciar, la plataforma entrará en <strong>Modo Pantalla Completa</strong>. Se registrará cualquier intento de cambiar de pestaña, minimizar la ventana, copiar texto o abrir menús contextuales. <strong>No se permite salir hasta finalizar o agotar el tiempo.</strong>
+              </p>
+            </div>
+          </div>
+
+          <button id="btnStartExam" class="btn-start-exam" type="button">
+            🚀 Iniciar Examen Seguro Ahora
+          </button>
+        </div>
+
+        <!-- PANEL 2: EXAMEN ACTIVO CON HUD Y PREGUNTAS -->
+        <div id="examActivePanel" class="exam-active-panel">
+          <!-- HUD de estado superior -->
+          <div class="exam-hud-bar">
+            <div class="hud-student-tag">
+              👤 Estudiante: <strong>Ysabel Carolina Nuñez</strong>
+            </div>
+
+            <div id="examTimerDisplay" class="hud-timer-badge">
+              ⏱️ 10:00
+            </div>
+
+            <div id="hudAntiCheatBadge" class="hud-anticheat-status">
+              🔒 ANTI-TRAMPA: ACTIVO (0 Faltas)
+            </div>
+          </div>
+
+          <!-- Barra de Progreso de Preguntas -->
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 0.35rem; color: var(--beige-muted);">
+              <span id="examProgressText">Pregunta 1 de 10</span>
+              <span>Examen de Seguridad Industrial</span>
+            </div>
+            <div class="exam-progress-bar-wrap">
+              <div id="examProgressBarFill" class="exam-progress-fill"></div>
+            </div>
+          </div>
+
+          <!-- Tarjeta de la Pregunta Activa -->
+          <div class="question-card">
+            <div class="question-meta-row">
+              <span id="questionBadgeNumber" class="question-num-tag">Pregunta 1</span>
+              <span id="questionBadgeTheme" class="card-tag tag-blue">Tema: SY-S-04</span>
+            </div>
+
+            <h3 id="questionTitleText" class="question-title-text">
+              Cargando pregunta...
+            </h3>
+
+            <!-- Opciones A, B, C, D -->
+            <div id="optionsContainer" class="options-container">
+              <!-- Botones generados por JS -->
+            </div>
+
+            <!-- Caja de Retroalimentación Profunda (Acierto o Fallo) -->
+            <div id="examFeedbackBox" class="feedback-box">
+              <div id="feedbackHeader" class="feedback-header">
+                Retroalimentación
+              </div>
+
+              <!-- Sección si se equivocó: Por qué no era esa -->
+              <div id="feedbackErrorSection" class="feedback-detail-section section-error">
+                <div class="feedback-detail-title">Explicación del Error Cometido:</div>
+                <div id="feedbackErrorExplanation" class="feedback-text"></div>
+              </div>
+
+              <!-- Sección: Cuál era la correcta y por qué -->
+              <div id="feedbackSolutionSection" class="feedback-detail-section section-solution">
+                <div class="feedback-detail-title">Fundamentación de la Respuesta Correcta (Norma Técnica):</div>
+                <div id="feedbackSolutionExplanation" class="feedback-text"></div>
+              </div>
+
+              <div class="feedback-actions">
+                <button id="btnNextQuestion" class="btn-next-question" type="button">
+                  Siguiente Pregunta ➔
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 3: RESULTADOS DEL EXAMEN Y DIPLOMA -->
+        <div id="examResultsPanel" class="exam-results-panel">
+          <div class="results-score-circle">
+            <span id="resultsScorePercent" class="score-number">100%</span>
+            <span class="score-label">Puntaje Final</span>
+          </div>
+
+          <div class="results-message-box">
+            <h3 id="resultsGreeting">¡Prueba Finalizada con Éxito!</h3>
+            <p id="resultsScoreSummaryText">
+              Excelente dedicación, Ysabel Carolina.
+            </p>
+          </div>
+
+          <!-- Diploma Virtual Acreditativo -->
+          <div class="diploma-card">
+            <div class="diploma-header">REPÚBLICA BOLIVARIANA DE VENEZUELA • PLATAFORMA SIY1704</div>
+            <h3 class="diploma-title">CERTIFICADO DE APROBACIÓN</h3>
+            <p class="diploma-award-text">Por cuanto ha demostrado conocimiento riguroso en Normas SY-S04, YR-S17 y LOPCYMAT, se otorga a:</p>
+            
+            <div class="diploma-student-name">Ysabel Carolina Nuñez</div>
+            
+            <p class="diploma-body">
+              Acreditando la culminación satisfactoria del Simulador de Examen Teórico-Práctico de Seguridad Industrial, Permisos de Trabajo y Análisis de Riesgos en el Trabajo (ART) con una calificación destacada de <strong id="diplomaScoreNumber" style="color:var(--neon-mustard);">100%</strong>.
+            </p>
+
+            <div class="diploma-footer">
+              <div class="diploma-sign">
+                <div class="diploma-sign-line"></div>
+                <strong>SIY1704 Sistema Automatizado</strong>
+                <span>Auditoría de Normas Técnicas</span>
+              </div>
+              <div class="diploma-sign">
+                <div class="diploma-sign-line" style="border-color: var(--neon-orange);"></div>
+                <strong>Monito Prevencionista</strong>
+                <span>Tutor Simbólico Oficial</span>
+              </div>
+              <div class="diploma-sign">
+                <div class="diploma-sign-line" style="border-color: var(--neon-mustard);"></div>
+                <strong id="diplomaDateText">Octubre 2026</strong>
+                <span>Fecha de Emisión</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button id="btnRestartExam" class="btn-start-exam" type="button">
+              🔄 Presentar un Nuevo Examen
+            </button>
+            <button onclick="window.print()" class="btn-header" style="padding: 0.85rem 1.4rem;">
+              🖨️ Imprimir Diploma / Guardar PDF
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 3: CASOS COMPARATIVOS (VIDA LABORAL VS COTIDIANA)
+         ========================================================================== -->
+    <section id="casos-practicos" class="section-wrapper">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title title-orange">⚖️ Casos de la Vida Laboral vs. Vida Cotidiana</h2>
+          <p class="section-subtitle">Aprende a identificar cómo los mismos peligros industriales ocurren a diario en el hogar</p>
+        </div>
+      </div>
+
+      <div id="comparativeCasesGrid" class="cases-grid">
+        <!-- Renderizado dinámicamente por JS -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 4: PREGUNTAS FRECUENTES (FAQS)
+         ========================================================================== -->
+    <section id="preguntas-frecuentes" class="section-wrapper">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title title-fuchsia">❓ Preguntas Frecuentes con su Desglose</h2>
+          <p class="section-subtitle">Dudas habituales en campo, fiscalizaciones de INPSASEL y aplicación de normas</p>
+        </div>
+      </div>
+
+      <div id="faqsListContainer" class="faqs-container">
+        <!-- Renderizado dinámicamente por JS -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 5: GLOSARIO DE TÉRMINOS
+         ========================================================================== -->
+    <section id="glosario" class="section-wrapper">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title title-blue">📖 Glosario Técnico de Seguridad Industrial</h2>
+          <p class="section-subtitle">Definiciones normativas que todo profesional debe dominar con exactitud</p>
+        </div>
+      </div>
+
+      <div id="glossaryGrid" class="glossary-grid">
+        <!-- Renderizado dinámicamente por JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       COMPAÑERO MONITO INTERACTIVO (DOCK FLOTANTE CON BOCADILLO SUPERIOR)
+       ========================================================================== -->
+  <aside class="mascot-dock">
+    <!-- Bocadillo que le sale por arriba -->
+    <div id="mascotBubble" class="mascot-bubble" style="display: none;">
+      <div class="mascot-bubble-header">
+        <span class="mascot-name">🐒 Monito Prevencionista</span>
+        <button id="mascotBubbleClose" class="mascot-bubble-close" title="Cerrar bocadillo">✕</button>
+      </div>
+      <div id="mascotSpeechText" class="mascot-text">
+        ¡Hola Ysabel Carolina! Estoy aquí para acompañarte en tu estudio.
+      </div>
+    </div>
+
+    <!-- Botón / Avatar del Monito -->
+    <button id="mascotAvatarBtn" class="mascot-avatar-btn" title="Tócame para recibir un consejo o motivación">
+      <span class="mascot-badge-online"></span>
+      <img src="icon.svg" alt="Monito Tutor" style="width: 85%; height: 85%; border-radius: 50%;">
+    </button>
+  </aside>
+
+  <!-- ==========================================================================
+       MODAL DE LECTURA COMPLETA DE MÓDULO NORMATIVO
+       ========================================================================== -->
+  <div id="moduleDetailModal" class="modal-overlay">
+    <div class="modal-content-box">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h2 id="modalModuleTitle">Título del Módulo</h2>
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button id="modalAudioBtn" class="btn-header" style="font-size: 0.8rem;">
+            🔊 Escuchar
+          </button>
+          <button class="modal-close-btn" title="Cerrar">✕</button>
+        </div>
+      </div>
+      <div id="modalModuleBody" class="modal-body">
+        <!-- Contenido HTML inyectado dinámicamente -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE ALERTA ANTI-TRAMPA
+       ========================================================================== -->
+  <div id="antiCheatAlertModal" class="anticheat-modal">
+    <div class="anticheat-modal-box">
+      <div class="anticheat-modal-icon">🚨</div>
+      <h3>¡ALERTA ANTI-TRAMPA!</h3>
+      <p id="antiCheatModalDesc">
+        Ysabel Carolina, has salido de la ventana o pestaña del examen.
+      </p>
+      <button id="btnResumeExam" class="btn-resume-exam" type="button">
+        ⚠️ Entendido, Regresar al Examen
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL GUÍA PARA INSTALAR EN PANTALLA DE INICIO (PWA)
+       ========================================================================== -->
+  <div id="pwaInstallModal" class="modal-overlay">
+    <div class="modal-content-box" style="max-width: 640px;">
+      <div class="modal-header">
+        <h2 style="font-size: 1.25rem; color: var(--neon-mustard-bright);">📲 Cómo Instalar SIY1704 en tu Teléfono</h2>
+        <button class="modal-close-btn">✕</button>
+      </div>
+      <div class="modal-body">
+        <p>¡Hola <strong>Ysabel Carolina</strong>! Si no te dejó descargarla como si fuera un archivo común, es porque <strong>SIY1704 es una PWA (Aplicación Web Progresiva)</strong>: no necesitas descargar un APK pesado de la Play Store ni llenar la memoria de tu teléfono. Se instala directo desde el navegador con icono propio y funciona sin conexión.</p>
+        
+        <div class="callout callout-warning" style="margin: 1rem 0;">
+          <h4>🚨 ¿Por qué no te dejó antes?</h4>
+          <p>Los teléfonos no permiten instalar aplicaciones desde un archivo suelto enviado por WhatsApp o abierto desde el explorador de archivos. El teléfono necesita abrirla como una dirección web.</p>
+        </div>
+
+        <div class="callout callout-info" style="margin: 1rem 0;">
+          <h4>⚡ Método 1: Conexión Inmediata por Wi-Fi (Recomendado)</h4>
+          <p>1. En tu computadora, haz doble clic en el archivo <strong>"SIY1704 - Abrir en el Celular.bat"</strong> que está en tu Escritorio.</p>
+          <p>2. En tu teléfono (conectado al mismo Wi-Fi), abre Chrome o Safari y escribe esta dirección:</p>
+          <div style="background: #000; padding: 0.6rem; border-radius: 6px; font-family: monospace; font-size: 1.1rem; color: var(--neon-mustard-bright); text-align: center; margin: 0.5rem 0;">
+            http://192.168.1.6:8080/
+          </div>
+          <p>3. En <strong>Android</strong>: Toca los <strong>3 puntos (⋮)</strong> arriba a la derecha y selecciona <strong>"Agregar a la pantalla principal"</strong> o <strong>"Instalar aplicación"</strong>.</p>
+          <p>4. En <strong>iPhone</strong>: Toca el botón <strong>Compartir (flecha hacia arriba)</strong> y elige <strong>"Agregar al inicio"</strong>.</p>
+        </div>
+
+        <div class="callout callout-info" style="margin: 1rem 0; border-color: var(--neon-fuchsia);">
+          <h4>🌐 Método 2: Subirla a Internet Gratis en 30 Segundos</h4>
+          <p>Si quieres tener un enlace público propio (ej: <em>siy1704.netlify.app</em>) para abrirla en cualquier celular sin depender de la computadora:</p>
+          <p>1. Entra en tu navegador a <a href="https://app.netlify.com/drop" target="_blank" style="color:var(--neon-blue-bright); font-weight:bold;">app.netlify.com/drop</a>.</p>
+          <p>2. Arrastra el archivo <strong>"SIY1704_Listo_Para_Internet.zip"</strong> que dejé en tu Escritorio.</p>
+          <p>3. ¡Listo! Te dará un enlace HTTPS con candado verde que puedes enviar por WhatsApp a tu teléfono e instalarlo con 1 solo toque.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PIE DE PÁGINA
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-quote">
+        "En la seguridad industrial no hay lugar para la suerte; cada norma escrita en <span>SY-S04</span> y <span>YR-S17</span> fue creada para que cada trabajador venezolano regrese sano a casa."
+      </p>
+      <div style="font-size: 0.9rem; color: var(--neon-mustard);">
+        Plataforma creada para: <strong>Ysabel Carolina Nuñez</strong> • <strong>SIY1704</strong>
+      </div>
+      <p class="footer-copy">
+        © 2026 SIY1704. Basado en normas PDVSA SI-S-04 / IR-S-17, LOPCYMAT, NT-01-2008 e INPSASEL. Todos los derechos formativos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts: Datos Técnicos y Motor Lógico -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>

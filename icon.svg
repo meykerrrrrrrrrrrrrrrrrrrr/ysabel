@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#141824"/>
+      <stop offset="70%" stop-color="#0a0c12"/>
+      <stop offset="100%" stop-color="#020305"/>
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="neonBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+
+    <linearGradient id="neonYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+
+    <linearGradient id="neonFuchsia" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ff5722"/>
+    </linearGradient>
+
+    <linearGradient id="monkeyFur" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9a5b32"/>
+      <stop offset="100%" stop-color="#6f3818"/>
+    </linearGradient>
+
+    <linearGradient id="monkeyFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8dfc2"/>
+      <stop offset="100%" stop-color="#e2bf9b"/>
+    </linearGradient>
+    
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGlow)" stroke="#3b82f6" stroke-width="8" filter="url(#neonGlow)"/>
+
+  <!-- Neon Border Rings -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#ff007f" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <circle cx="256" cy="256" r="226" fill="none" stroke="#facc15" stroke-width="2" opacity="0.4"/>
+
+  <!-- Logo Banner Rings / Tech HUD elements -->
+  <path d="M 60 256 A 196 196 0 0 1 452 256" fill="none" stroke="#ff6b35" stroke-width="3" opacity="0.7"/>
+
+  <!-- MONKEY CHARACTER -->
+  <g id="cuteMonkey" transform="translate(0, 30)">
+    <!-- Ears -->
+    <circle cx="160" cy="250" r="48" fill="url(#monkeyFur)"/>
+    <circle cx="160" cy="250" r="30" fill="url(#monkeyFace)"/>
+    <circle cx="352" cy="250" r="48" fill="url(#monkeyFur)"/>
+    <circle cx="352" cy="250" r="30" fill="url(#monkeyFace)"/>
+
+    <!-- Head base -->
+    <ellipse cx="256" cy="260" rx="105" ry="95" fill="url(#monkeyFur)"/>
+
+    <!-- Face (Heart shaped snout/cheeks) -->
+    <path d="M 180 250 C 180 205, 235 205, 256 230 C 277 205, 332 205, 332 250 C 332 295, 305 325, 256 325 C 207 325, 180 295, 180 250 Z" fill="url(#monkeyFace)"/>
+
+    <!-- Cute Eyes -->
+    <ellipse cx="225" cy="245" rx="14" ry="18" fill="#1b1c22"/>
+    <ellipse cx="287" cy="245" rx="14" ry="18" fill="#1b1c22"/>
+    <!-- Catchlights -->
+    <circle cx="220" cy="240" r="6" fill="#ffffff"/>
+    <circle cx="227" cy="248" r="2.5" fill="#ffffff"/>
+    <circle cx="282" cy="240" r="6" fill="#ffffff"/>
+    <circle cx="289" cy="248" r="2.5" fill="#ffffff"/>
+
+    <!-- Cute Nose -->
+    <ellipse cx="256" cy="272" rx="9" ry="6" fill="#4a2511"/>
+    <!-- Cute Smile -->
+    <path d="M 242 284 Q 256 298 270 284" fill="none" stroke="#4a2511" stroke-width="4" stroke-linecap="round"/>
+    <!-- Rosy Cheeks -->
+    <circle cx="196" cy="268" r="12" fill="#ff007f" opacity="0.35"/>
+    <circle cx="316" cy="268" r="12" fill="#ff007f" opacity="0.35"/>
+
+    <!-- Safety Glasses (Gafas de Seguridad) -->
+    <rect x="200" y="228" width="50" height="34" rx="10" fill="none" stroke="#3b82f6" stroke-width="4" opacity="0.9"/>
+    <rect x="262" y="228" width="50" height="34" rx="10" fill="none" stroke="#3b82f6" stroke-width="4" opacity="0.9"/>
+    <line x1="250" y1="244" x2="262" y2="244" stroke="#3b82f6" stroke-width="4"/>
+
+    <!-- SAFETY HELMET (Casco de Seguridad Industrial) -->
+    <!-- Helmet Base / Shell -->
+    <path d="M 160 205 C 160 120, 352 120, 352 205 C 365 205, 370 215, 360 218 C 340 224, 172 224, 152 218 C 142 215, 147 205, 160 205 Z" fill="url(#neonYellow)" stroke="#d97706" stroke-width="3"/>
+    <!-- Helmet Ridge -->
+    <path d="M 246 122 C 246 122, 256 114, 266 122 L 268 205 L 244 205 Z" fill="#fef08a"/>
+    <!-- Reflective Stripe on Helmet -->
+    <path d="M 172 195 Q 256 182 340 195" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+    <!-- Cross / Safety Emblem on Helmet -->
+    <circle cx="256" cy="165" r="16" fill="#1d4ed8"/>
+    <path d="M 252 155 L 260 155 L 260 175 L 252 175 Z M 246 161 L 266 161 L 266 169 L 246 169 Z" fill="#ffffff"/>
+
+    <!-- SAFETY VEST & BODY -->
+    <path d="M 195 325 L 160 410 C 160 430, 352 430, 352 410 L 317 325 Z" fill="url(#neonOrange)"/>
+    <!-- Silver Reflective Bands on Vest -->
+    <rect x="180" y="355" width="152" height="12" rx="4" fill="#f8fafc" opacity="0.9"/>
+    <rect x="172" y="385" width="168" height="12" rx="4" fill="#f8fafc" opacity="0.9"/>
+    <line x1="225" y1="325" x2="225" y2="415" stroke="#f8fafc" stroke-width="10" opacity="0.9"/>
+    <line x1="287" y1="325" x2="287" y2="415" stroke="#f8fafc" stroke-width="10" opacity="0.9"/>
+
+    <!-- Little Paws Waving -->
+    <circle cx="150" cy="340" r="22" fill="url(#monkeyFur)"/>
+    <circle cx="362" cy="340" r="22" fill="url(#monkeyFur)"/>
+  </g>
+
+  <!-- TEXT BADGE "SIY1704" -->
+  <g transform="translate(256, 475)">
+    <rect x="-130" y="-30" width="260" height="38" rx="19" fill="#000000" stroke="#3b82f6" stroke-width="3" filter="url(#neonGlow)"/>
+    <text x="0" y="-6" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="22" fill="#facc15" letter-spacing="4">
+      SIY1704
+    </text>
+  </g>
+</svg>
